@@ -183,6 +183,7 @@
     "submit": "Send Message",
     "sending": "Sending...",
     "success": "Thank you — we will be in touch shortly.",
+    "error": "Sorry, something went wrong. Please try again, or email us directly.",
     "office_title": "Our Office",
     "office_address": "128 City Road, London, England, EC1V 2NX",
     "office_email": "info@jwlegalaccounting.co.uk",

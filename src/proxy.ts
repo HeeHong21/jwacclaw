@@ -12,6 +12,9 @@ function getLocale(request: NextRequest): string {
 export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
+  // API routes are locale-independent — never prefix them with a locale.
+  if (pathname.startsWith("/api")) return;
+
   const hasLocale = locales.some(
     (locale) =>
       pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
@@ -25,5 +28,5 @@ export function proxy(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/((?!_next|favicon.ico|public).*)"],
+  matcher: ["/((?!api|_next|favicon.ico|public).*)"],
 };

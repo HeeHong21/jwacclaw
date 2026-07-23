@@ -8,13 +8,35 @@ interface ContactFormProps {
 }
 
 export default function ContactForm({ dict }: ContactFormProps) {
-  const [status, setStatus] = useState<"idle" | "sending" | "done">("idle");
+  const [status, setStatus] = useState<
+    "idle" | "sending" | "done" | "error"
+  >("idle");
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setStatus("sending");
-    await new Promise((r) => setTimeout(r, 1200));
-    setStatus("done");
+
+    const fd = new FormData(e.currentTarget);
+    const payload = {
+      name: fd.get("name"),
+      email: fd.get("email"),
+      phone: fd.get("phone"),
+      service: fd.get("service"),
+      message: fd.get("message"),
+      website: fd.get("website"), // honeypot
+    };
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      if (!res.ok) throw new Error("Request failed");
+      setStatus("done");
+    } catch {
+      setStatus("error");
+    }
   }
 
   if (status === "done") {
@@ -39,6 +61,7 @@ export default function ContactForm({ dict }: ContactFormProps) {
           </label>
           <input
             required
+            name="name"
             type="text"
             className="w-full border border-silver px-4 py-3 text-sm text-charcoal focus:outline-none focus:border-navy-deep transition-colors bg-white"
           />
@@ -49,6 +72,7 @@ export default function ContactForm({ dict }: ContactFormProps) {
           </label>
           <input
             required
+            name="email"
             type="email"
             className="w-full border border-silver px-4 py-3 text-sm text-charcoal focus:outline-none focus:border-navy-deep transition-colors bg-white"
           />
@@ -61,6 +85,7 @@ export default function ContactForm({ dict }: ContactFormProps) {
             {dict.phone_label}
           </label>
           <input
+            name="phone"
             type="tel"
             className="w-full border border-silver px-4 py-3 text-sm text-charcoal focus:outline-none focus:border-navy-deep transition-colors bg-white"
           />
@@ -69,7 +94,10 @@ export default function ContactForm({ dict }: ContactFormProps) {
           <label className="block text-xs tracking-widest uppercase text-midgray mb-2">
             {dict.service_label}
           </label>
-          <select className="w-full border border-silver px-4 py-3 text-sm text-charcoal focus:outline-none focus:border-navy-deep transition-colors bg-white appearance-none">
+          <select
+            name="service"
+            className="w-full border border-silver px-4 py-3 text-sm text-charcoal focus:outline-none focus:border-navy-deep transition-colors bg-white appearance-none"
+          >
             <option value="">—</option>
             {dict.service_options.map((opt: string) => (
               <option key={opt} value={opt}>
@@ -86,10 +114,25 @@ export default function ContactForm({ dict }: ContactFormProps) {
         </label>
         <textarea
           required
+          name="message"
           rows={5}
           className="w-full border border-silver px-4 py-3 text-sm text-charcoal focus:outline-none focus:border-navy-deep transition-colors bg-white resize-none"
         />
       </div>
+
+      {/* Honeypot — hidden from real users, catches bots */}
+      <input
+        type="text"
+        name="website"
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden="true"
+        className="absolute -left-[9999px] h-0 w-0 opacity-0"
+      />
+
+      {status === "error" && (
+        <p className="text-sm text-red-600">{dict.error}</p>
+      )}
 
       <button
         type="submit"
