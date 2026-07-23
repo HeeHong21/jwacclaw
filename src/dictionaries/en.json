@@ -1,0 +1,248 @@
+{
+  "nav": {
+    "services": "Services",
+    "about": "About",
+    "insights": "Insights",
+    "contact": "Contact Us"
+  },
+  "hero": {
+    "eyebrow": "JW Legal & Accounting Ltd",
+    "headline": "Expert Legal & Accounting\nServices in the UK",
+    "subheadline": "Trusted advisors for individuals, businesses, and the Korean community across the United Kingdom.",
+    "cta_primary": "Our Services",
+    "cta_secondary": "Get in Touch"
+  },
+  "stats": {
+    "item1_value": "15+",
+    "item1_label": "Years of Experience",
+    "item2_value": "500+",
+    "item2_label": "Clients Served",
+    "item3_value": "2",
+    "item3_label": "Languages",
+    "item4_value": "100%",
+    "item4_label": "Client Focus"
+  },
+  "services": {
+    "eyebrow": "What We Do",
+    "title": "Comprehensive Legal & Accounting Services",
+    "subtitle": "We provide expert advice across a full spectrum of legal and accounting disciplines, tailored to your needs.",
+    "cta": "View All Services",
+    "items": [
+      {
+        "slug": "corporate-commercial",
+        "title": "Corporate & Commercial",
+        "desc": "Company formation, contracts, mergers & acquisitions, and commercial agreements for businesses of all sizes.",
+        "tag": "Legal",
+        "extended_desc": "Our Corporate & Commercial practice advises businesses of all sizes on the full range of legal matters needed to build, grow, and protect a business in the UK. Whether you are incorporating a new company, negotiating a commercial agreement, or managing a complex acquisition, we provide clear, commercially focused advice at every stage.",
+        "key_areas": [
+          "Company formation and structuring",
+          "Shareholders' agreements and corporate governance",
+          "Mergers, acquisitions and disposals",
+          "Commercial contracts and negotiations",
+          "Joint ventures and partnerships",
+          "Business restructuring and dissolution"
+        ]
+      },
+      {
+        "slug": "property-law",
+        "title": "Property Law",
+        "desc": "Residential and commercial conveyancing, lease negotiations, and landlord & tenant matters.",
+        "tag": "Legal",
+        "extended_desc": "Our Property Law team handles the full spectrum of residential and commercial property transactions. From first-time buyers to seasoned investors, we guide clients through every step with precision — ensuring one of life's most significant financial decisions is handled with care.",
+        "key_areas": [
+          "Residential conveyancing (buying and selling)",
+          "Commercial property transactions and leases",
+          "Lease negotiations and renewals",
+          "Landlord and tenant disputes",
+          "Land registration",
+          "Property development agreements"
+        ]
+      },
+      {
+        "slug": "immigration",
+        "title": "Immigration",
+        "desc": "Skilled Worker visas, family routes, settlement, British nationality, and sponsorship licences.",
+        "tag": "Legal",
+        "extended_desc": "Navigating the UK immigration system can be complex and high-stakes. Our immigration practice provides expert, up-to-date advice across all visa routes, with a particular understanding of the challenges faced by Korean nationals and businesses seeking to establish a UK presence.",
+        "key_areas": [
+          "Skilled Worker and Global Talent visas",
+          "Family and partner visas",
+          "Indefinite Leave to Remain (ILR) and settlement",
+          "British nationality and naturalisation",
+          "Sponsor licence applications and compliance",
+          "Student and graduate visa routes"
+        ]
+      },
+      {
+        "slug": "wills-probate",
+        "title": "Wills & Probate",
+        "desc": "Estate planning, lasting powers of attorney, inheritance, and administration of estates.",
+        "tag": "Legal",
+        "extended_desc": "Planning for the future is one of the most important steps you can take for yourself and your family. Our Wills & Probate team provides sensitive, thorough advice to ensure your wishes are protected and your estate is administered efficiently — in English or Korean.",
+        "key_areas": [
+          "Drafting and updating wills",
+          "Lasting Powers of Attorney (LPA)",
+          "Probate applications and estate administration",
+          "Inheritance disputes and contested wills",
+          "Cross-border estate planning",
+          "Trust formation and management"
+        ]
+      },
+      {
+        "slug": "tax-advisory",
+        "title": "Tax Advisory",
+        "desc": "Personal and corporate tax planning, HMRC compliance, self-assessment returns, and tax investigations.",
+        "tag": "Accounting",
+        "extended_desc": "Our Tax Advisory team helps individuals and businesses manage their UK tax obligations effectively and efficiently. From straightforward self-assessment returns to complex corporate tax planning, we provide clear advice that keeps you compliant while minimising unnecessary tax exposure.",
+        "key_areas": [
+          "Personal self-assessment tax returns",
+          "Corporate tax planning and compliance",
+          "VAT registration and returns",
+          "HMRC enquiries and investigations",
+          "Capital gains tax advice",
+          "International tax and cross-border matters"
+        ]
+      },
+      {
+        "slug": "accounting-audit",
+        "title": "Accounting & Audit",
+        "desc": "Financial statements, management accounts, payroll, bookkeeping, and statutory audits.",
+        "tag": "Accounting",
+        "extended_desc": "Sound financial reporting is the foundation of every well-run business. Our Accounting & Audit team provides accurate, timely financial services to help you understand your position, meet your statutory obligations, and make informed decisions with confidence.",
+        "key_areas": [
+          "Statutory financial statements",
+          "Management accounts and reporting",
+          "Bookkeeping and cloud accounting",
+          "Payroll management",
+          "Statutory audits",
+          "Companies House filings and compliance"
+        ]
+      }
+    ]
+  },
+  "about": {
+    "eyebrow": "About Us",
+    "title": "A Trusted Partner for UK & Korean Clients",
+    "body": "JW Legal & Accounting Ltd was founded with a clear purpose: to provide high-quality, bilingual legal and accounting services to individuals, families, and businesses in the United Kingdom. We combine deep expertise in UK law and accounting with an understanding of the unique needs of the Korean community — whether settling in the UK, establishing a business, or planning for the future.",
+    "cta": "Learn More About Us",
+    "stat1_value": "15+",
+    "stat1_label": "Years of Experience",
+    "stat2_value": "500+",
+    "stat2_label": "Clients Served",
+    "stat3_value": "EN & KO",
+    "stat3_label": "Bilingual Service"
+  },
+  "insights": {
+    "eyebrow": "Insights",
+    "title": "Latest News & Guidance",
+    "cta": "View All Insights",
+    "articles": [
+      {
+        "category": "Immigration",
+        "date": "April 2025",
+        "title": "UK Visa Changes: What You Need to Know in 2025",
+        "excerpt": "Recent Home Office reforms affect Skilled Worker visas, family routes, and student extensions. We break down what has changed and what it means for you."
+      },
+      {
+        "category": "Tax",
+        "date": "March 2025",
+        "title": "Self-Assessment Deadline Guide for UK Residents",
+        "excerpt": "A clear guide to HMRC self-assessment deadlines, penalties, and how to file correctly — whether you are employed, self-employed, or a landlord."
+      },
+      {
+        "category": "Corporate",
+        "date": "February 2025",
+        "title": "Setting Up a Business in the UK: A Step-by-Step Guide",
+        "excerpt": "From choosing the right company structure to registering at Companies House — everything you need to start your UK business with confidence."
+      }
+    ]
+  },
+  "cta_banner": {
+    "title": "Ready to talk?",
+    "body": "Whether you have a legal question or need accounting support, our bilingual team is here to help.",
+    "button": "Get in Touch"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Get in Touch",
+    "body": "Whether you have a legal question, need accounting support, or simply want to find out how we can help — we would love to hear from you.",
+    "name_label": "Full Name",
+    "email_label": "Email Address",
+    "phone_label": "Phone Number (optional)",
+    "service_label": "Service of Interest",
+    "service_options": [
+      "Corporate & Commercial Law",
+      "Property Law",
+      "Immigration",
+      "Wills & Probate",
+      "Tax Advisory",
+      "Accounting & Audit",
+      "Other"
+    ],
+    "message_label": "Your Message",
+    "submit": "Send Message",
+    "sending": "Sending...",
+    "success": "Thank you — we will be in touch shortly.",
+    "office_title": "Our Office",
+    "office_address": "128 City Road, London, England, EC1V 2NX",
+    "office_email": "info@jwlegalaccounting.co.uk",
+    "office_phone": "+44 (0)20 0000 0000",
+    "languages_label": "We speak English and Korean",
+    "hours_label": "Monday – Friday, 9:00 am – 6:00 pm"
+  },
+  "services_page": {
+    "hero_eyebrow": "Our Services",
+    "hero_title": "Legal & Accounting Expertise\nYou Can Rely On",
+    "hero_body": "From company formation to estate planning, and from tax advisory to statutory audits — our team delivers expert advice across a full range of practice areas.",
+    "legal_heading": "Legal Services",
+    "accounting_heading": "Accounting Services",
+    "contact_prompt": "Not sure which service you need?",
+    "contact_cta": "Speak to our team"
+  },
+  "about_page": {
+    "hero_eyebrow": "About Us",
+    "hero_title": "Trusted Advisors.\nTwo Languages.\nOne Team.",
+    "hero_body": "JW Legal & Accounting Ltd is a London-based firm providing expert bilingual legal and accounting services to UK clients and the Korean community.",
+    "story_title": "Our Story",
+    "story_body": "Founded on the principle that every client deserves clear, expert advice in a language they fully understand, JW Legal & Accounting Ltd has grown into a trusted name among UK businesses, individuals, and the Korean community both in Britain and in Korea.\n\nWe understand that navigating a foreign legal and financial system can be daunting. Our bilingual team removes that barrier — providing the same standard of expertise in English and Korean, ensuring nothing is lost in translation.",
+    "values_title": "Our Values",
+    "values": [
+      { "title": "Integrity", "desc": "We give honest, transparent advice — always in your best interest." },
+      { "title": "Excellence", "desc": "Our standards are high because your outcomes matter." },
+      { "title": "Accessibility", "desc": "Expert advice should be clear and available in the language you choose." },
+      { "title": "Commitment", "desc": "We are with you for the long term, not just a single transaction." }
+    ],
+    "team_eyebrow": "Our Team",
+    "team_title": "Meet Our Directors",
+    "team_body": "Our directors bring together legal, accounting and cross-cultural expertise — combining deep knowledge of UK law with a commitment to serving both English and Korean-speaking clients.",
+    "team_members": [
+      {
+        "name": "Jiwon Bang",
+        "initials": "JB",
+        "role": "Director",
+        "bio": "Jiwon brings extensive expertise in corporate law, immigration and bilingual client services. Her dual fluency in English and Korean enables her to navigate complex legal matters with precision and cultural sensitivity, making her an invaluable guide for Korean-speaking clients across the UK."
+      },
+      {
+        "name": "Femi Julius Oboro",
+        "initials": "FO",
+        "role": "Director",
+        "bio": "Femi specialises in corporate and commercial law, accounting and compliance. With a background spanning both legal practice and financial advisory, he delivers integrated advice across the full spectrum of business needs — from company formation through to audit and tax planning."
+      }
+    ]
+  },
+  "insights_page": {
+    "hero_eyebrow": "Insights",
+    "hero_title": "News, Guidance & Updates",
+    "hero_body": "Stay informed with our latest articles on UK law, tax, immigration, and accounting — in English and Korean."
+  },
+  "footer": {
+    "tagline": "Expert legal & accounting services\nfor UK and Korean clients.",
+    "services_title": "Services",
+    "company_title": "Company",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "disclaimer": "Disclaimer",
+    "copyright": "© 2025 JW Legal & Accounting Ltd. All rights reserved.",
+    "registered": "Registered in England & Wales. Company No. 14426020."
+  }
+}
