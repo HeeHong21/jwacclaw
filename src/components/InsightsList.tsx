@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 interface Article {
@@ -8,6 +9,7 @@ interface Article {
   date: string;
   title: string;
   excerpt: string;
+  slug: string;
 }
 
 interface Props {
@@ -58,9 +60,10 @@ export default function InsightsList({ articles, categories, lang, insightImages
               {filtered.map((article) => {
                 const idx = articles.indexOf(article);
                 return (
-                  <article
-                    key={article.title}
-                    className="group border border-silver hover:shadow-md transition-shadow duration-200 bg-white"
+                  <Link
+                    key={article.slug}
+                    href={`/${lang}/insights/${article.slug}`}
+                    className="group border border-silver hover:shadow-md transition-shadow duration-200 bg-white block"
                   >
                     <div className="h-48 relative overflow-hidden">
                       <Image
@@ -91,7 +94,7 @@ export default function InsightsList({ articles, categories, lang, insightImages
                         </span>
                       </div>
                     </div>
-                  </article>
+                  </Link>
                 );
               })}
             </div>

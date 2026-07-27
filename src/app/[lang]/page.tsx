@@ -237,7 +237,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
             {dict.insights.articles.map((article, i) => (
               <Link
                 key={article.title}
-                href={`/${lang}/insights`}
+                href={`/${lang}/insights/${article.slug}`}
                 className="group block"
               >
                 {/* Thumbnail */}
