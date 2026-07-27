@@ -7,6 +7,7 @@ interface FooterProps {
 }
 
 export default function Footer({ dict, lang }: FooterProps) {
+  const currentYear = new Date().getFullYear();
   const serviceLinks = [
     { label: dict.services.items[0].title, href: `/${lang}/services` },
     { label: dict.services.items[1].title, href: `/${lang}/services` },
@@ -111,7 +112,7 @@ export default function Footer({ dict, lang }: FooterProps) {
         {/* Bottom bar */}
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
           <div className="text-xs text-white/40 space-y-1">
-            <p>{dict.footer.copyright}</p>
+            <p>{dict.footer.copyright.replace("{year}", String(currentYear))}</p>
             <p>{dict.footer.registered}</p>
           </div>
           <div className="flex gap-6">

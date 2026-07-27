@@ -208,10 +208,22 @@
     "story_body": "Founded on the principle that every client deserves clear, expert advice in a language they fully understand, JW Legal & Accounting Ltd has grown into a trusted name among UK businesses, individuals, and the Korean community both in Britain and in Korea.\n\nWe understand that navigating a foreign legal and financial system can be daunting. Our bilingual team removes that barrier — providing the same standard of expertise in English and Korean, ensuring nothing is lost in translation.",
     "values_title": "Our Values",
     "values": [
-      { "title": "Integrity", "desc": "We give honest, transparent advice — always in your best interest." },
-      { "title": "Excellence", "desc": "Our standards are high because your outcomes matter." },
-      { "title": "Accessibility", "desc": "Expert advice should be clear and available in the language you choose." },
-      { "title": "Commitment", "desc": "We are with you for the long term, not just a single transaction." }
+      {
+        "title": "Integrity",
+        "desc": "We give honest, transparent advice — always in your best interest."
+      },
+      {
+        "title": "Excellence",
+        "desc": "Our standards are high because your outcomes matter."
+      },
+      {
+        "title": "Accessibility",
+        "desc": "Expert advice should be clear and available in the language you choose."
+      },
+      {
+        "title": "Commitment",
+        "desc": "We are with you for the long term, not just a single transaction."
+      }
     ],
     "team_eyebrow": "Our Team",
     "team_title": "Meet Our Directors",
@@ -243,7 +255,7 @@
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
     "disclaimer": "Disclaimer",
-    "copyright": "© 2025 JW Legal & Accounting Ltd. All rights reserved.",
+    "copyright": "© {year} JW Legal & Accounting Ltd. All rights reserved.",
     "registered": "Registered in England & Wales. Company No. 14426020."
   }
 }
